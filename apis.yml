@@ -1,14 +1,22 @@
+aid: agent-md
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/apis.yml
 name: AGENT.md
-description: Vendor-neutral AI coding agent configuration file providing project context
-  and instructions. Alternative to AGENTS.md serving the same purpose of unifying
-  agent guidance across tools.
-url: ''
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- AI Agents
-- Developer Workflow
-- Coding Standards
-- AI Copilot
-created: '2025'
-modified: '2025'
+  - AI Agents
+  - Developer Workflow
+  - Coding Standards
+  - AI Copilot
+description: >-
+  Vendor-neutral AI coding agent configuration file providing project context
+  and instructions. Alternative to AGENTS.md serving the same purpose of
+  unifying agent guidance across tools.
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
-common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
