@@ -1,0 +1,105 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "AGENT.md"
+  description: "Vocabulary for the AGENT.md vendor-neutral AI coding agent configuration format covering project context, instructions, conventions, and tool guidance."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis: []
+
+  resources:
+    - name: agent-configuration
+      description: "AGENT.md configuration file providing project context and instructions for AI coding agents."
+      apis: []
+      actions:
+        - define
+
+  actions:
+    - name: define
+      description: "Define an AGENT.md configuration for a project."
+      httpMethod: null
+      pattern: configuration
+
+  schemas:
+    core:
+      - name: AgentMd
+        description: "Top-level AGENT.md configuration schema."
+        api: null
+      - name: Stack
+        description: "Technology stack configuration."
+        api: null
+      - name: Conventions
+        description: "Code conventions and style guidelines."
+        api: null
+
+  parameters: {}
+
+  enums:
+    supported-agents:
+      - GitHub Copilot
+      - Cursor
+      - Claude
+      - Codeium
+      - Tabnine
+      - Amazon Q
+    common-languages:
+      - JavaScript
+      - TypeScript
+      - Python
+      - Go
+      - Rust
+      - Java
+      - Ruby
+
+  authentication:
+    schemes: []
+
+capability:
+  workflows:
+    - name: AI Agent Configuration
+      description: "Define AGENT.md configuration files to guide AI coding agents working on a project."
+      apisComposed: []
+      toolCount: 0
+      personas:
+        - developer
+        - tech-lead
+
+  personas:
+    - id: developer
+      name: Developer
+      description: "Software developer using AI coding assistants with project-specific AGENT.md instructions."
+      workflows:
+        - AI Agent Configuration
+    - id: tech-lead
+      name: Tech Lead
+      description: "Technical lead standardizing AI agent behavior across a development team using AGENT.md."
+      workflows:
+        - AI Agent Configuration
+
+  domains:
+    - name: Agent Configuration
+      description: "Configuration files and instructions for AI coding agents."
+      resources:
+        - agent-configuration
+    - name: Coding Standards
+      description: "Code style, naming conventions, and development guidelines."
+      resources: []
+    - name: Project Context
+      description: "Technology stack, tools, and project-specific context for agents."
+      resources: []
+
+  namespaces:
+    consumed: []
+
+  binds: []
+
+crossReference:
+  - resource: agent-configuration
+    operations: []
+    workflows:
+      - AI Agent Configuration
+    personas:
+      - developer
+      - tech-lead

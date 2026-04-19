@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "agent-md": "https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/vocabulary#",
+    "project": "name",
+    "description": "description",
+    "instructions": "agent-md:instructions",
+    "stack": "agent-md:stack",
+    "conventions": "agent-md:conventions",
+    "tools": "agent-md:tools",
+    "avoid": "agent-md:avoid",
+    "focus": "agent-md:focus",
+    "context": "agent-md:context"
+  }
+}

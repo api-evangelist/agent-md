@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/json-schema/agent-md-schema.json",
+  "name": "AgentMd",
+  "title": "AGENT.md Configuration Schema",
+  "description": "Schema for the AGENT.md vendor-neutral AI coding agent configuration format.",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Name of the project."
+    },
+    "description": {
+      "type": "string",
+      "description": "High-level description of the project and its purpose."
+    },
+    "instructions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "General instructions for the AI agent when working on this project."
+    },
+    "stack": {
+      "type": "object",
+      "description": "Technology stack information.",
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "framework": {
+          "type": "string"
+        },
+        "runtime": {
+          "type": "string"
+        },
+        "package_manager": {
+          "type": "string"
+        }
+      }
+    },
+    "conventions": {
+      "type": "object",
+      "description": "Code style and convention guidelines.",
+      "properties": {
+        "style": {
+          "type": "string"
+        },
+        "naming": {
+          "type": "string"
+        },
+        "testing": {
+          "type": "string"
+        },
+        "documentation": {
+          "type": "string"
+        }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of development tools used in the project."
+    },
+    "avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Patterns, libraries, or approaches the agent should avoid."
+    },
+    "focus": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Areas or files the agent should focus on."
+    },
+    "context": {
+      "type": "string",
+      "description": "Additional project context for the agent."
+    }
+  }
+}

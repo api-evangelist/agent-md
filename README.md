@@ -1,25 +1,43 @@
-# AGENT.md (agent-md)
-Vendor-neutral AI coding agent configuration file providing project context and instructions. Alternative to AGENTS.md serving the same purpose of unifying agent guidance across tools.
+# AGENT.md
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/apis.yml)
+AGENT.md is a vendor-neutral AI coding agent configuration file format providing project context and instructions for AI agents. It serves as an alternative to AGENTS.md, unifying agent guidance across tools like GitHub Copilot, Cursor, Claude, and other AI coding assistants.
 
-## Scope
+## Description
 
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+AGENT.md files are placed at the root of a project repository to provide AI coding agents with:
 
-## Tags:
+- Project description and purpose
+- Coding conventions and style guides
+- Technology stack information
+- Tools and frameworks in use
+- Patterns to avoid
+- Focus areas within the codebase
 
- - AI Agents, Developer Workflow, Coding Standards, AI Copilot
+## Documentation
 
-## Timestamps
+- [GitHub Copilot Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
 
-- **Created:** 2025-01-01 
-- **Modified:** 2026-03-16 
+## JSON Schema
+
+- [AGENT.md Schema](json-schema/agent-md-schema.json)
+- [AGENT.md Structure](json-structure/agent-md-structure.json)
+
+## JSON-LD
+
+- [AGENT.md Context](json-ld/agent-md-context.jsonld)
+
+## Examples
+
+- [AGENT.md Example](examples/agent-md-example.json)
+
+## Vocabulary
+
+- [AGENT.md Vocabulary](vocabulary/agent-md-vocabulary.yaml)
+
+## Tags
+
+AI Agents, AI Copilot, Coding Standards, Developer Workflow, Configuration, Standards
 
 ## Maintainers
 
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- Kin Lane (kin@apievangelist.com)

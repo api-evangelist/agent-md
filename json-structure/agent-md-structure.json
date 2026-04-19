@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/json-structure/agent-md-structure.json",
+  "name": "AgentMd",
+  "title": "AGENT.md Configuration Structure",
+  "description": "Structure for the AGENT.md vendor-neutral AI coding agent configuration format.",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "instructions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stack": {
+      "type": "object"
+    },
+    "conventions": {
+      "type": "object"
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "focus": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "context": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "project": "my-api-project",
+  "description": "A REST API built with Node.js and Express serving mobile and web clients.",
+  "instructions": [
+    "Follow the existing code style and patterns",
+    "Write tests for all new functionality",
+    "Keep functions small and focused"
+  ],
+  "stack": {
+    "language": "JavaScript",
+    "framework": "Express",
+    "runtime": "Node.js 20",
+    "package_manager": "npm"
+  },
+  "conventions": {
+    "style": "ESLint with Airbnb config",
+    "naming": "camelCase for variables, PascalCase for classes",
+    "testing": "Jest with coverage > 80%",
+    "documentation": "JSDoc for all public functions"
+  },
+  "tools": [
+    "eslint",
+    "jest",
+    "prettier",
+    "husky"
+  ],
+  "avoid": [
+    "jQuery",
+    "callbacks (use async/await)",
+    "var (use const/let)"
+  ],
+  "focus": [
+    "src/",
+    "tests/"
+  ],
+  "context": "This project is a microservice in a larger distributed system."
+}
