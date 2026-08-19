@@ -29,7 +29,7 @@ description: >-
   Claude, and other AI coding assistants.
 created: '2025-01-01'
 modified: '2026-04-19'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis: []
 common:
   - url: https://github.com/buildkite/agent-stack-k8s/blob/main/AGENT.md
