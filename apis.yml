@@ -2,6 +2,7 @@ aid: agent-md
 url: >-
   https://raw.githubusercontent.com/api-evangelist/agent-md/refs/heads/main/apis.yml
 name: AGENT.md
+x-type: convention
 type: Index
 deliveryModel:
   model: unknown
