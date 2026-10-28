@@ -66,42 +66,70 @@
 
 AGENT.md is a vendor-neutral AI coding agent configuration file format providing project context and instructions for AI agents. It serves as an alternative to AGENTS.md, unifying agent guidance across tools like GitHub Copilot, Cursor, Claude, and other AI coding assistants.
 
-## Description
+**Areas:** AI Agents · AI Copilot · Coding Standards · Developer Workflow · Configuration · Standards
 
-AGENT.md files are placed at the root of a project repository to provide AI coding agents with:
+## AGENT.md on APIs.io
 
-- Project description and purpose
-- Coding conventions and style guides
-- Technology stack information
-- Tools and frameworks in use
-- Patterns to avoid
-- Focus areas within the codebase
+Everything profiled for AGENT.md is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agent-md/](https://apis.io/providers/agent-md/)** — or go straight to one of the APIs or properties below.
 
-## Documentation
+### Published properties
 
-- [GitHub Copilot Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## JSON Schema
+#### JSON Schema (1)
 
-- [AGENT.md Schema](json-schema/agent-md-schema.json)
-- [AGENT.md Structure](json-structure/agent-md-structure.json)
+The data models the API reads and writes.
 
-## JSON-LD
+- [AGENT.md Configuration Schema](https://apis.io/schemas/agent-md/agent-md/)
 
-- [AGENT.md Context](json-ld/agent-md-context.jsonld)
+#### JSON Structure (1)
 
-## Examples
+Data models expressed in JSON Structure.
 
-- [AGENT.md Example](examples/agent-md-example.json)
+- [Agent Md Structure](https://apis.io/json-structure/agent-md/agent-md-structure/)
 
-## Vocabulary
+#### JSON-LD (1)
 
-- [AGENT.md Vocabulary](vocabulary/agent-md-vocabulary.yaml)
+Linked-data contexts for the provider's vocabulary.
 
-## Tags
+- [Agent Md Context](https://apis.io/jsonld/agent-md/agent-md-context/)
 
-AI Agents, AI Copilot, Coding Standards, Developer Workflow, Configuration, Standards
+#### Vocabulary (1)
 
-## Maintainers
+The provider's domain terms, defined.
 
-- Kin Lane (kin@apievangelist.com)
+- [Agent Md Vocabulary](https://apis.io/vocabularies/agent-md/agent-md-vocabulary/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Agent Md Example](https://apis.io/examples/agent-md/agent-md-example/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [AGENT.md — jsonschema rules](https://apis.io/rules/agent-md/agent-md-jsonschema-spectral-rules/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://github.com/buildkite/agent-stack-k8s/blob/main/AGENT.md)
+
+## API Evangelist rating
+
+Not yet rated. See [apis.io/providers/agent-md/](https://apis.io/providers/agent-md/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AGENT.md: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agent-md/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
